@@ -235,3 +235,8 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .facts dd a{color:var(--accent-deep)}
 .sub-tag{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:18px 0 6px!important}
 .stats{grid-template-columns:repeat(2,1fr)}
+.bahamas-grid:not(.pa-grid){grid-template-columns:1fr 1fr 1fr}
+.bahamas-grid .b-team{grid-column:1/-1}
+.bahamas-grid .b-team img{height:auto!important;object-fit:contain}
+.pod-photos{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr)}
+.pod-photos img{min-height:150px}
