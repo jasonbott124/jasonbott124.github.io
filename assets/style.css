@@ -191,3 +191,9 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .play-badge{position:absolute;top:10px;left:10px;font:500 11px var(--mono);background:rgba(12,22,32,.7);color:#fff;padding:3px 8px;border-radius:2px;pointer-events:none}
 @media (max-width:900px){.t-grid{columns:2}}
 @media (max-width:560px){.t-grid{columns:1}.travel-head p{font-size:18px}}
+.gallery.g3{grid-template-columns:1fr 1fr 1fr;margin-top:-48px}
+.gallery.g3 video{width:100%;height:420px;object-fit:cover}
+@media (max-width:900px){.gallery.g3{grid-template-columns:1fr 1fr}.gallery.g3 video{height:300px}}
+@media (max-width:560px){.gallery.g3{grid-template-columns:1fr}}
+.filters{flex-wrap:wrap}
+@media (max-width:900px){.beyond-grid{grid-template-columns:1fr}.beyond-grid>*{min-width:0}}
