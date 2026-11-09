@@ -210,3 +210,11 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .vision-now{font-size:16px;max-width:760px}
 .vision-now a{color:var(--accent-deep);font:500 14px var(--mono);text-decoration:none}
 @media (max-width:900px){.pillars{grid-template-columns:1fr;gap:20px}.vision{padding:64px 0;margin-bottom:64px}}
+.portrait img{aspect-ratio:3/4;object-position:50% 50%}
+.pa-grid{grid-template-columns:1fr 1fr}
+.pa-grid .b-wide{grid-column:1/-1}
+.pa-grid img{height:260px}
+.t-pano{margin:0 0 14px}.t-pano[hidden]{display:none}
+.t-pano img{width:100%;height:auto}
+.t-pano figcaption{margin-top:8px;font:12px var(--mono);color:var(--ice-muted)}
+.t-pano figcaption b{display:block;font:500 12px var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
