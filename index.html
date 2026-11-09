@@ -44,7 +44,7 @@
       <a class="btn ghost" href="https://github.com/jasonbott124" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
-  <p class="hero-caption">Airborne radar survey over an ice front, Amundsen Sea Embayment, 2026</p>
+  <p class="hero-caption">Airborne radar survey over an ice front, Amundsen Sea Embayment, 2026 · Footage: The New York Times</p>
 </section>
 
 <!-- SNAPSHOT -->
@@ -52,7 +52,7 @@
   <div class="snap-text">
     <h2 class="label">At a glance</h2>
     <p>B.S. Geophysics (Honors) at the <strong>University of Texas at Austin</strong>, Jackson School of Geosciences, with a Certificate in Computational Science &amp; Engineering from the Oden Institute. I've been a research associate at the <strong>University of Texas Institute for Geophysics (UTIG)</strong> since 2022, and I was on UTIG's airborne radar team during the 2025–26 Antarctic field season.</p>
-    <p>Next, I plan to pursue a PhD that keeps one foot in geoscience and one in ecology, giving a voice to ecological underdogs: species too misunderstood, cryptic, or remote to register against the whims of industrial expansion. My computational and geoscience background lets me ask how Earth systems shape ecosystems, and how ecosystems shape them in return.</p>
+    <p>Next, I plan to pursue research that keeps one foot in geoscience and one in ecology, giving a voice to ecological underdogs: species too misunderstood, cryptic, or remote to register against the whims of industrial expansion. My computational and geoscience background lets me ask how Earth systems shape ecosystems, and how ecosystems shape them in return.</p>
     <p>Outside the lab, I host a long-form science interview podcast. I'm happiest in places where the work and the landscape are both a little extreme.</p>
   </div>
   <div class="snap-side">
@@ -74,21 +74,24 @@
 
   <article class="project feature">
     <div class="project-media">
-      <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">
-        <img src="assets/img/egu-poster.jpg" alt="EGU 2025 poster: Why assumptions and uncertainties in bed DEMs matter, Haynes Glacier" loading="lazy">
-      </a>
-      <p class="caption">EGU 2025, Vienna: why bed DEM assumptions matter. <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
-      <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener" class="poster2">
+      <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener">
         <img src="assets/img/egu2024-poster.jpg" alt="EGU 2024 poster: The potential role of anomalous geothermal flux for enhanced basal melting and suppressed ice velocity at Haynes Glacier" loading="lazy">
       </a>
       <p class="caption">EGU 2024, Vienna: anomalous geothermal flux and a "sticky spot" at Haynes Glacier. <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
+      <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener" class="poster2">
+        <img src="assets/img/egu-poster.jpg" alt="EGU 2025 poster: Why assumptions and uncertainties in bed DEMs matter, Haynes Glacier" loading="lazy">
+      </a>
+      <p class="caption">EGU 2025, Vienna: why bed DEM assumptions matter. <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
     </div>
     <div class="project-body">
       <p class="tag">UTIG · 2022 – present</p>
-      <h3>Why bed DEMs matter: geothermal heat at Haynes Glacier</h3>
-      <p>Bed topography is the most important boundary condition for an ice model, but widely used bed products (Bedmap, BedMachine) carry large uncertainties and some circular assumptions. I compare interpolation approaches, including ordinary kriging, stochastic simulation of bed roughness, and mass-balance-informed topography. Then I trace how each choice carries through to shallow-ice-approximation model output.</p>
-      <p>Haynes Glacier makes a sharp test case. Dipping englacial reflectors in the radar data point to enhanced basal melt from anomalous, spatially variable geothermal flux, likely linked to nearby volcanic centers such as Mt. Takahe.</p>
+      <h3>Geothermal heat and bed uncertainty at Haynes Glacier</h3>
+      <p class="sub-tag">EGU 2024 · Anomalous geothermal flux</p>
+      <p>Near its grounding line, Haynes Glacier has a "sticky spot," a patch of ice moving far slower than the flow around it. Upstream, radar shows internal layers drawn sharply down toward the bed. I proposed that anomalous geothermal heat (or strong basal friction) melts basal ice upstream, pulling cold surface snow deep into the ice column, which then refreezes to the bed downstream as the ice thins, producing the slow patch. I tested the idea with coupled thermal and kinematic models, with implications for heat flux and ice-stream stability in West Antarctica.</p>
+      <p class="sub-tag">EGU 2025 · Why bed DEMs matter</p>
+      <p>Bed topography is the most important boundary condition for an ice model, yet the standard bed products each break down at Haynes: Bedmap struggles with its trough-dominated bed, and BedMachine's mass-conservation approach struggles with heterogeneous geothermal flux from nearby volcanoes like Mt. Takahe. Along a flowband traced from MEaSUREs surface velocity, I built bed DEMs from the raw radar using deterministic interpolation (tension splines, inverse-distance weighting, curvature minimization) and conditional stochastic simulation of bed roughness. I then fed each into a 2.5D shallow-ice model and compared its simulated layers with the dipping reflectors observed in the radar, showing how bed assumptions shape model output.</p>
       <ul class="chips"><li>Ice-penetrating radar</li><li>Geostatistics</li><li>Shallow ice approximation</li><li>West Antarctica</li></ul>
+      <a class="more" href="https://doi.org/10.5194/egusphere-egu24-14072" target="_blank" rel="noopener">EGU24 abstract →</a>&nbsp;&nbsp;
       <a class="more" href="https://doi.org/10.5194/egusphere-egu25-14386" target="_blank" rel="noopener">EGU25 abstract →</a>
     </div>
   </article>
@@ -124,20 +127,18 @@
         <p class="tag light">Dec 2025 – Feb 2026 · RV <em>Araon</em> · UTIG &amp; KOPRI</p>
         <h3>Airborne radar over Thwaites Glacier</h3>
         <p>I was a field technician on UTIG's four-person airborne ice-penetrating radar team during an international expedition to the Amundsen Sea Embayment aboard the Korean icebreaker RV <em>Araon</em>. I planned helicopter radar surveys, helped the senior radar engineer run and troubleshoot the instrument, and processed and quality-checked radar data in real time.</p>
-        <p>Over six survey flights we flew roughly 3,000 line-km of multi-polarization radar over the Thwaites, Haynes and Crosson glaciers, recording every line in both polarizations. The lines reached 125 km past the grounding line, the furthest upstream this helicopter radar has flown, and included the first helicopter survey of Haynes Glacier and the first look at the largely unsurveyed Crosson Ice Shelf. The data target ice-shelf damage, crystal fabric, grounding-line change and support for the BAS/KOPRI hot-water drill camp. Fractured floating ice at Thwaites is also a terrestrial analog for Europa, where NASA's Europa Clipper will carry a similar ice-penetrating radar.</p>
+        <p>Over six survey flights we flew roughly 3,000 line-km of multi-polarization radar over the Thwaites, Haynes and Crosson glaciers, recording every line in both polarizations. The lines included the first helicopter survey of Haynes Glacier and the first look at the largely unsurveyed Crosson Ice Shelf. The data target ice-shelf damage, crystal fabric, grounding-line change and support for the BAS/KOPRI hot-water drill camp. Fractured floating ice at Thwaites is also a terrestrial analog for Europa, where our group's REASON instrument aboard Europa Clipper will sound the ice shell.</p>
         <p>The work was covered by <a href="https://www.nytimes.com/2026/01/27/climate/antarctica-thwaites-radar.html" target="_blank" rel="noopener">The New York Times</a> and <a href="https://www.youtube.com/watch?v=T5KnkhG_obc" target="_blank" rel="noopener">PBS NewsHour</a>.</p>
         <div class="stats">
           <div><b>6</b><span>survey flights</span></div>
           <div><b>~3,000</b><span>line-km flown</span></div>
-          <div><b>125 km</b><span>upstream of the grounding line</span></div>
-          <div><b>4</b><span>polarization channels</span></div>
         </div>
       </div>
       <figure class="field-video">
         <video autoplay muted loop playsinline poster="assets/img/heli-poster.jpg">
           <source src="assets/video/radar-heli-takeoff.mp4" type="video/mp4">
         </video>
-        <figcaption>Radar-equipped helicopter lifting off the <em>Araon</em> helideck</figcaption>
+        <figcaption>Radar-equipped helicopter lifting off the <em>Araon</em> helideck · Footage: The New York Times</figcaption>
       </figure>
     </div>
 
@@ -155,6 +156,8 @@
 
     <h3 class="sub light">The season in pictures</h3>
     <div class="s-grid">
+      <figure><img src="assets/img/ant/nyt-boom.jpg" alt="Team fitting an antenna boom to the helicopter on the Araon's deck" loading="lazy"><figcaption>Fitting the antenna booms on deck · Photo: Chang W. Lee/The New York Times</figcaption></figure>
+      <figure><img src="assets/img/ant/nyt-hangar.jpg" alt="Looking out from the hangar beneath the helicopter toward the helideck" loading="lazy"><figcaption>From the hangar, beneath the radar helicopter · Photo: Chang W. Lee/The New York Times</figcaption></figure>
       <figure><img src="assets/img/ant/processing-desk.jpg" alt="Crowded processing table with laptops, flight-plan maps, a data server, and cables" loading="lazy"><figcaption>The radar processing table: flight plans, QC checklists, and a lot of cables</figcaption></figure>
       <figure><img src="assets/img/ant/processing-selfie.jpg" alt="Jason and a teammate at the radar processing table aboard the Araon" loading="lazy"><figcaption>Late-night data processing aboard the <em>Araon</em></figcaption></figure>
       <figure><img src="assets/img/ant/34f5b542.jpg" alt="An Adélie penguin inspects the Araon in the fast ice" loading="lazy"><figcaption>An Adélie penguin inspects the <em>Araon</em> in the fast ice</figcaption></figure>
@@ -282,8 +285,7 @@
         <p>I led a six-person applied science and engineering team that designed a dual-use, carbon-capturing greenhouse complex in Presidio County, Texas, powered by direct-use geothermal energy.</p>
       </article>
       <article class="travel">
-        <p class="tag">Travel &amp; the outdoors</p>
-        <h3>Off the clock</h3>
+                <h3>Travel &amp; the Outdoors</h3>
         <p>Volcanoes in Java, Tasmanian and New Zealand backcountry, Mediterranean islands, Byzantine mosaics, and a fair amount of time at sea.</p>
         <a class="more" href="#travel">See the travel gallery ↓</a>
       </article>
@@ -364,7 +366,7 @@
   <div class="wrap foot-inner">
     <div>
       <p class="foot-name">Jason A. Bott</p>
-      <p>Open to graduate research positions and collaborations in glaciology, geophysics, and computational earth science.</p>
+      <p>Open to collaboration in glaciology, geophysics, computational earth science, and ecology &amp; wildlife conservation.</p>
     </div>
     <div class="foot-links">
       <a href="mailto:jbott@utexas.edu">jbott@utexas.edu</a>

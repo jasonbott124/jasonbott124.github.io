@@ -233,3 +233,5 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .pod-photos img{min-height:180px}
 .poster2{display:block;margin-top:28px}
 .facts dd a{color:var(--accent-deep)}
+.sub-tag{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:18px 0 6px!important}
+.stats{grid-template-columns:repeat(2,1fr)}
