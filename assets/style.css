@@ -218,3 +218,8 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .t-pano img{width:100%;height:auto}
 .t-pano figcaption{margin-top:8px;font:12px var(--mono);color:var(--ice-muted)}
 .t-pano figcaption b{display:block;font:500 12px var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+.s-grid{columns:4;column-gap:12px;margin:8px 0 56px}
+.s-grid figure{break-inside:avoid;margin:0 0 12px;position:relative}
+.s-grid img,.s-grid video{width:100%;height:auto;display:block}
+@media (max-width:900px){.s-grid{columns:3}}
+@media (max-width:560px){.s-grid{columns:2}}
