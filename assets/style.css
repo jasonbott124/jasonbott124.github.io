@@ -167,3 +167,27 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 @media (max-width:900px){.field-intro.bahamas{grid-template-columns:1fr}}
 @media (max-width:560px){.bahamas-grid{grid-template-columns:1fr 1fr}.bahamas-grid .b-wide{grid-column:1/-1}.bahamas-grid img{height:220px}.pod-photos img{min-height:180px}}
 @media (max-width:900px){.podcast{grid-template-columns:1fr;gap:0}.pod-text{padding:28px}}
+
+/* portrait */
+.snap-side{display:flex;flex-direction:column;gap:24px}
+.portrait{margin:0}
+.portrait img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 40%}
+.portrait figcaption{color:var(--muted)}
+
+/* travel */
+.travel-sec{background:var(--ink-2);color:var(--ice);padding:110px 0}
+.travel-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:36px;flex-wrap:wrap}
+.travel-head p{max-width:560px;color:#c9d6de;font:400 20px/1.5 var(--serif)}
+.filters{display:flex;gap:6px}
+.filters button{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:8px 14px;background:transparent;color:var(--ice-muted);border:1px solid rgba(255,255,255,.2);border-radius:2px;cursor:pointer}
+.filters button:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+.filters button.on{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.t-grid{columns:3;column-gap:14px}
+.t-item{break-inside:avoid;margin:0 0 14px;position:relative}
+.t-item[hidden]{display:none}
+.t-item img,.t-item video{width:100%;height:auto;display:block}
+.t-item figcaption{margin-top:8px;font:12px var(--mono);color:var(--ice-muted);line-height:1.5}
+.t-item figcaption b{display:block;font:500 12px var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+.play-badge{position:absolute;top:10px;left:10px;font:500 11px var(--mono);background:rgba(12,22,32,.7);color:#fff;padding:3px 8px;border-radius:2px;pointer-events:none}
+@media (max-width:900px){.t-grid{columns:2}}
+@media (max-width:560px){.t-grid{columns:1}.travel-head p{font-size:18px}}
