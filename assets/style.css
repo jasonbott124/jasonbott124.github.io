@@ -153,3 +153,17 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
   .snapshot{padding-top:64px;padding-bottom:64px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* additions: Bahamas + podcast photos */
+.field-intro.bahamas{grid-template-columns:1fr 1.3fr;padding-top:56px;border-top:1px solid rgba(255,255,255,.12)}
+.bahamas-grid{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:12px;align-items:start}
+.bahamas-grid figure{margin:0}
+.bahamas-grid img{width:100%;height:300px;object-fit:cover}
+.beyond-grid{grid-template-columns:1fr 1fr}
+.podcast{grid-column:1/-1;display:grid;grid-template-columns:1.25fr 1fr;gap:36px;align-items:center;padding:0!important;overflow:hidden}
+.pod-photos{display:grid;grid-template-rows:1fr 1fr;gap:4px;height:100%}
+.pod-photos img{width:100%;height:100%;min-height:200px;object-fit:cover}
+.pod-text{padding:36px 36px 36px 0}
+@media (max-width:900px){.field-intro.bahamas{grid-template-columns:1fr}}
+@media (max-width:560px){.bahamas-grid{grid-template-columns:1fr 1fr}.bahamas-grid .b-wide{grid-column:1/-1}.bahamas-grid img{height:220px}.pod-photos img{min-height:180px}}
+@media (max-width:900px){.podcast{grid-template-columns:1fr;gap:0}.pod-text{padding:28px}}
