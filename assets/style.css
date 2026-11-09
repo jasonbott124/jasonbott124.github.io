@@ -197,3 +197,16 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 @media (max-width:560px){.gallery.g3{grid-template-columns:1fr}}
 .filters{flex-wrap:wrap}
 @media (max-width:900px){.beyond-grid{grid-template-columns:1fr}.beyond-grid>*{min-width:0}}
+
+/* vision */
+.vision{background:var(--paper-2);padding:96px 0;margin-bottom:96px}
+.vision-lede{font:400 clamp(24px,2.6vw,32px)/1.4 var(--serif);max-width:860px;margin-bottom:22px;letter-spacing:-.005em}
+.vision-body{font:400 20px/1.6 var(--serif);max-width:760px;color:var(--text);margin-bottom:48px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:40px}
+.pillars div{border-top:3px solid var(--accent);padding-top:18px}
+.pillars span{font:500 12px var(--mono);color:var(--accent-deep)}
+.pillars h3{font-size:28px;margin:6px 0 10px}
+.pillars p{font-size:16px;color:var(--muted)}
+.vision-now{font-size:16px;max-width:760px}
+.vision-now a{color:var(--accent-deep);font:500 14px var(--mono);text-decoration:none}
+@media (max-width:900px){.pillars{grid-template-columns:1fr;gap:20px}.vision{padding:64px 0;margin-bottom:64px}}
