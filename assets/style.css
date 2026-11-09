@@ -231,3 +231,5 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 @media (max-width:560px){.stats{grid-template-columns:1fr 1fr}}
 .pod-photos{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
 .pod-photos img{min-height:180px}
+.poster2{display:block;margin-top:28px}
+.facts dd a{color:var(--accent-deep)}
