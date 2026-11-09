@@ -229,3 +229,5 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .cert-photo{margin:32px 0 0;max-width:340px}
 .cert-photo img{width:100%}
 @media (max-width:560px){.stats{grid-template-columns:1fr 1fr}}
+.pod-photos{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.pod-photos img{min-height:180px}
