@@ -240,3 +240,6 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .bahamas-grid .b-team img{height:auto!important;object-fit:contain}
 .pod-photos{grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr)}
 .pod-photos img{min-height:150px}
+.cert-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px}
+.cert-row .cert-photo{margin:0;max-width:300px;flex:1 1 220px}
+.field-map-photo{margin:0 0 24px;max-width:640px}.field-map-photo img{width:100%}
