@@ -243,3 +243,10 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .cert-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px}
 .cert-row .cert-photo{margin:0;max-width:300px;flex:1 1 220px}
 .field-map-photo{margin:0 0 24px;max-width:640px}.field-map-photo img{width:100%}
+.bio-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:16px}
+.bio-head .label{margin-bottom:0}
+.lang-toggle{display:flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.lang-toggle button{font:500 12px var(--mono);padding:5px 10px;background:transparent;color:var(--muted);border:0;cursor:pointer}
+.lang-toggle button.on{background:var(--ink);color:#fff}
+.bio[hidden]{display:none}
+.bio[lang="ja"] p{font-family:"Noto Serif JP",var(--serif);font-size:18px;line-height:1.9}

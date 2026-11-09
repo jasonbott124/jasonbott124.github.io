@@ -10,7 +10,7 @@
 <meta property="og:image" content="assets/img/flight-poster.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -51,10 +51,22 @@
 <!-- SNAPSHOT -->
 <section class="snapshot wrap">
   <div class="snap-text">
-    <h2 class="label">At a glance</h2>
+    <div class="bio-head">
+      <h2 class="label">At a glance</h2>
+      <div class="lang-toggle" role="group" aria-label="Bio language">
+        <button class="on" data-lang="en" aria-pressed="true">EN</button><button data-lang="ja" aria-pressed="false" lang="ja">日本語</button>
+      </div>
+    </div>
+    <div class="bio" data-bio="en">
     <p>B.S. Geophysics (Honors) at the <strong>University of Texas at Austin</strong>, Jackson School of Geosciences, with a Certificate in Computational Science &amp; Engineering from the Oden Institute. I've been a research associate at the <strong>University of Texas Institute for Geophysics (UTIG)</strong> since 2022, and I was on UTIG's airborne radar team during the 2025–26 Antarctic field season.</p>
     <p>Next, I plan to pursue research that keeps one foot in geoscience and one in ecology, giving a voice to ecological underdogs: species too misunderstood, cryptic, or remote to register against the whims of industrial expansion. My computational and geoscience background lets me ask how Earth systems shape ecosystems, and how ecosystems shape them in return.</p>
     <p>Outside the lab, I host a long-form science interview podcast. I'm happiest in places where the work and the landscape are both a little extreme.</p>
+    </div>
+    <div class="bio" data-bio="ja" lang="ja" hidden>
+    <p><strong>テキサス大学オースティン校</strong>ジャクソン地球科学部にて地球物理学（優等）の学士号を取得し、オーデン研究所の計算科学・工学サーティフィケートを修了しています。2022年から<strong>テキサス大学地球物理学研究所（UTIG）</strong>で研究助手を務め、2025〜26年の南極フィールドシーズンではUTIGの航空機搭載レーダーチームの一員として参加しました。</p>
+    <p>今後は、地球科学と生態学の両方に軸足を置いた研究に取り組みたいと考えています。誤解されていたり、人目につきにくかったり、人里離れた場所に生息していたりするために、産業開発の波の中で見過ごされがちな「生態系の弱者」たちに光を当てることが目標です。計算科学と地球科学のバックグラウンドを活かし、地球のシステムが生態系をどのように形づくり、また生態系が地球のシステムにどのような影響を与えるのかを探究しています。</p>
+    <p>研究以外では、科学者や専門家を招いてじっくり話を聞くロングフォームのポッドキャストを主宰しています。仕事も風景も少し過酷な場所にいるときが、いちばん幸せです。</p>
+    </div>
   </div>
   <div class="snap-side">
   <figure class="portrait"><img src="assets/img/portrait-merbabu.jpg" alt="Jason on a ridge above a sea of clouds with volcanoes in the distance, Central Java"><figcaption>Mt. Merbabu, Central Java</figcaption></figure>
@@ -427,6 +439,18 @@
       f.hidden = !(b.dataset.f==='all'||f.dataset.region===b.dataset.f);
     });
   });});
+})();
+</script>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.lang-toggle button');
+  function set(l){
+    document.querySelectorAll('.bio').forEach(function(b){b.hidden=b.dataset.bio!==l;});
+    btns.forEach(function(x){var on=x.dataset.lang===l;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on);});
+    try{localStorage.setItem('bioLang',l);}catch(e){}
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.lang);});});
+  try{var s=localStorage.getItem('bioLang');if(s)set(s);}catch(e){}
 })();
 </script>
 </body>
