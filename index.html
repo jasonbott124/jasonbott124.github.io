@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jason Bott — Geophysics & Glaciology</title>
+<meta name="description" content="Jason A. Bott — geophysics researcher at UT Austin. Ice-penetrating radar, subglacial geothermal flux, ice-sheet modeling, Antarctic fieldwork, and the On the Subject of Life* podcast.">
+<meta property="og:title" content="Jason Bott — Geophysics & Glaciology">
+<meta property="og:description" content="Ice-penetrating radar, subglacial geothermal flux, and Antarctic fieldwork at UT Austin.">
+<meta property="og:image" content="assets/img/flight-poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav-name" href="#top">J. Bott</a>
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#field">Fieldwork</a>
+    <a href="#output">Output</a>
+    <a href="#beyond">Beyond</a>
+    <a href="assets/docs/Jason_Bott_CV.pdf" class="nav-cv">CV ↓</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/img/flight-poster.jpg">
+    <source src="assets/video/flight-ice-front.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade"></div>
+  <div class="hero-inner">
+    <p class="kicker">Geophysics · Glaciology · Computation</p>
+    <h1>Jason A. Bott</h1>
+    <p class="lede">I use ice-penetrating radar and numerical ice-flow models to study what's happening beneath the West Antarctic Ice Sheet: subglacial heat, volcanism, and the bed topography that controls how ice moves.</p>
+    <div class="hero-links">
+      <a class="btn" href="#research">See the research</a>
+      <a class="btn ghost" href="mailto:jbott@utexas.edu">jbott@utexas.edu</a>
+    </div>
+  </div>
+  <p class="hero-caption">Airborne radar survey over an ice front, Amundsen Sea Embayment, 2026</p>
+</section>
+
+<!-- SNAPSHOT -->
+<section class="snapshot wrap">
+  <div class="snap-text">
+    <h2 class="label">At a glance</h2>
+    <p>B.S. Geophysics (Honors) at the <strong>University of Texas at Austin</strong>, Jackson School of Geosciences, with a Certificate in Computational Science &amp; Engineering from the Oden Institute. I've been a research associate at the <strong>University of Texas Institute for Geophysics (UTIG)</strong> since 2022, and I was on UTIG's airborne radar team during the 2025–26 Antarctic field season.</p>
+    <p>Outside the lab, I host a long-form science interview podcast. I'm happiest in places where the work and the landscape are both a little extreme.</p>
+  </div>
+  <dl class="facts">
+    <div><dt>Based</dt><dd>Austin, Texas</dd></div>
+    <div><dt>Research home</dt><dd>UTIG · Oden Institute</dd></div>
+    <div><dt>Advisors</dt><dd>D. Blankenship, D. Young, S. Yan · T. Keitt</dd></div>
+    <div><dt>Tools</dt><dd>Python, Linux, IPR processing, SIA &amp; Stokes ice models, geostatistics, ML</dd></div>
+    <div><dt>Languages</dt><dd>English (native), Spanish (intermediate)</dd></div>
+  </dl>
+</section>
+
+<!-- RESEARCH -->
+<section class="research wrap" id="research">
+  <h2 class="section-title"><span>01</span>Research</h2>
+
+  <article class="project feature">
+    <div class="project-media">
+      <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">
+        <img src="assets/img/egu-poster.jpg" alt="EGU 2025 poster: Why assumptions and uncertainties in bed DEMs matter, Haynes Glacier" loading="lazy">
+      </a>
+      <p class="caption">EGU General Assembly 2025, Vienna. <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
+    </div>
+    <div class="project-body">
+      <p class="tag">UTIG · 2022 – present</p>
+      <h3>Why bed DEMs matter: geothermal heat at Haynes Glacier</h3>
+      <p>Bed topography is the most important boundary condition for an ice model, but widely used bed products (Bedmap, BedMachine) carry large uncertainties and some circular assumptions. I compare interpolation approaches, including ordinary kriging, stochastic simulation of bed roughness, and mass-balance-informed topography. Then I trace how each choice carries through to shallow-ice-approximation model output.</p>
+      <p>Haynes Glacier makes a sharp test case. Dipping englacial reflectors in the radar data point to enhanced basal melt from anomalous, spatially variable geothermal flux, likely linked to nearby volcanic centers such as Mt. Takahe.</p>
+      <ul class="chips"><li>Ice-penetrating radar</li><li>Geostatistics</li><li>Shallow ice approximation</li><li>West Antarctica</li></ul>
+      <a class="more" href="https://doi.org/10.5194/egusphere-egu25-14386" target="_blank" rel="noopener">EGU25 abstract →</a>
+    </div>
+  </article>
+
+  <div class="project-grid">
+    <article class="project">
+      <p class="tag">Honors thesis</p>
+      <h3>Subglacial volcanism beneath Thwaites Glacier</h3>
+      <p>I'm testing whether subglacial volcanism can be detected in ice-penetrating radar, and how it might affect shear-margin mechanics in the Thwaites catchment. The work combines IPR observations with thermally coupled ice-flow models (shallow ice approximation and 3D finite-difference Stokes flow).</p>
+      <ul class="chips"><li>Thwaites Glacier</li><li>Stokes flow</li><li>Thermomechanics</li></ul>
+    </article>
+    <article class="project">
+      <p class="tag">Oden Institute · Advisor: Dr. Timothy Keitt</p>
+      <h3>Rivers, birdsong &amp; the Amazon</h3>
+      <p>In this independent project, I'm using BirdNET, an open-source machine-learning tool, to map variation in antbird (Thamnophilidae) song across geographic space. I'm asking whether that variation tracks the geomorphological evolution of Amazonian rivers, and whether it can help with population assessment.</p>
+      <ul class="chips"><li>Machine learning</li><li>Bioacoustics</li><li>Geomorphology</li></ul>
+    </article>
+    <article class="project">
+      <p class="tag">Collaborations</p>
+      <h3>Radioglaciology beyond Antarctica</h3>
+      <p>I've contributed to team studies of airborne radar radiometry and specular subglacial terrain on the Devon Ice Cap, Canada; ice-fabric anisotropy at Thwaites; and a possible ephemeral salty lake beneath the former Laurentide Ice Sheet.</p>
+      <ul class="chips"><li>Devon Island</li><li>Ice fabric</li><li>Paleo-ice sheets</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- FIELDWORK -->
+<section class="field" id="field">
+  <div class="wrap">
+    <h2 class="section-title light"><span>02</span>Fieldwork</h2>
+    <div class="field-intro">
+      <div>
+        <p class="tag light">Dec 2025 – Feb 2026 · RV <em>Araon</em> · UTIG &amp; KOPRI</p>
+        <h3>Airborne radar over Thwaites Glacier</h3>
+        <p>I was a field technician on UTIG's four-person airborne ice-penetrating radar team during an international expedition to the Amundsen Sea Embayment aboard the Korean icebreaker RV <em>Araon</em>. I planned helicopter radar surveys, helped the senior radar engineer run and troubleshoot the instrument, and processed and quality-checked radar data in real time.</p>
+        <p>The season set a record for inland radar coverage, made new measurements of ice crystal-fabric orientation, and imaged subglacial terrain that had never been mapped. The work was covered by <a href="https://www.nytimes.com/2026/01/27/climate/antarctica-thwaites-radar.html" target="_blank" rel="noopener">The New York Times</a> and <a href="https://www.youtube.com/watch?v=T5KnkhG_obc" target="_blank" rel="noopener">PBS NewsHour</a>.</p>
+      </div>
+      <figure class="field-video">
+        <video autoplay muted loop playsinline poster="assets/img/heli-poster.jpg">
+          <source src="assets/video/radar-heli-takeoff.mp4" type="video/mp4">
+        </video>
+        <figcaption>Radar-equipped helicopter lifting off the <em>Araon</em> helideck</figcaption>
+      </figure>
+    </div>
+
+    <div class="gallery">
+      <figure class="g-wide"><img src="assets/img/ipr-rack.jpg" alt="Ice-penetrating radar electronics rack installed in a helicopter cabin" loading="lazy"><figcaption>The IPR electronics rack, installed in the helicopter cabin</figcaption></figure>
+      <figure><img src="assets/img/mirror-portrait.jpg" alt="Jason reflected in a helicopter mirror while working on the radar antenna" loading="lazy"><figcaption>Antenna work on the helideck</figcaption></figure>
+      <figure><img src="assets/img/ice-shelf-deck.jpg" alt="Ice shelf front seen from the ship's deck" loading="lazy"><figcaption>Ice shelf front from the deck</figcaption></figure>
+    </div>
+
+    <h3 class="sub light">Other field experience</h3>
+    <ul class="timeline">
+      <li><span>Nov 2025</span>Structural geology mapping, Big Bend National Park, TX</li>
+      <li><span>May 2024</span>Marine geology &amp; geophysics field course, Port Aransas, TX</li>
+      <li><span>Feb–Mar 2024</span>Marine sediment mapping &amp; sea-level reconstruction, San Salvador Island, Bahamas</li>
+      <li><span>Fall 2022</span>Introductory geoscience field course, Austin, TX</li>
+    </ul>
+    <p class="certs">STCW-certified: Basic Firefighting · First Aid/CPR/AED · Personal Survival Techniques · Personal Safety &amp; Social Responsibilities</p>
+  </div>
+</section>
+
+<!-- OUTPUT -->
+<section class="output wrap" id="output">
+  <h2 class="section-title"><span>03</span>Abstracts, talks &amp; media</h2>
+  <div class="cols">
+    <div>
+      <h3 class="sub">Conference abstracts</h3>
+      <ol class="pubs">
+        <li><b>Bott, J.</b>, Blankenship, D., Young, D., Yan, S. (2025). Why assumptions and uncertainties in bed DEMs matter: A geothermal example from Haynes Glacier, West Antarctica. <i>EGU General Assembly</i>, Vienna. <a href="https://doi.org/10.5194/egusphere-egu25-14386" target="_blank" rel="noopener">doi</a></li>
+        <li><b>Bott, J.</b>, Blankenship, D. D., Yan, S., Beem, L., Young, D. A. (2024). The potential role of anomalous geothermal flux for enhanced basal melting and suppressed ice velocity at Haynes Glacier, West Antarctica. <i>EGU</i>.</li>
+        <li><b>Bott, J.</b>, Blankenship, D. D., Yan, S., Young, D. A. (2023). Potential sources of a velocity anomaly at the grounding line of Haynes Glacier. <i>AGU Fall Meeting</i>.</li>
+        <li>Li, D., Blankenship, D. D., Young, D., Yan, S., … <b>Bott, J.</b>, … Lee, W. S. (2026). Radar-derived ice fabric anisotropy and anisotropic scattering in Thwaites Glacier, West Antarctica. <i>IGS Radioglaciology</i>.</li>
+        <li>Yan, S., Pierce, C., Dapeng, Z., Czwakiel, N., Jackson, H., <b>Bott, J.</b>, Blankenship, D. (2026). On the possibility of a substantial but ephemeral salty lake beneath the Laurentide Ice Sheet. <i>AGU</i>.</li>
+        <li>Gerekos, C., Rutishauser, A., Scanlan, K., Wolfenbarger, N., Beem, L., <b>Bott, J.</b>, Blankenship, D. (2023). Airborne radar radiometry and coastline mapping of specular subglacial terrain on Devon Island. <i>EGU</i>. <a href="https://doi.org/10.5194/egusphere-egu23-9149" target="_blank" rel="noopener">doi</a></li>
+      </ol>
+    </div>
+    <div>
+      <h3 class="sub">Invited talks</h3>
+      <ul class="plain">
+        <li><span class="date">Apr 2025</span>UTIG Discussion Hour: <i>Why uncertainties and assumptions in bed DEMs matter: A geothermal example from the Haynes and Thwaites Glaciers</i></li>
+        <li><span class="date">Oct 2024</span>UTIG Discussion Hour: <i>Ice and fire at the world's edge: Anomalous geothermal flux beneath the West Antarctic Ice Sheet</i></li>
+      </ul>
+      <h3 class="sub">Media</h3>
+      <ul class="plain">
+        <li><span class="date">Feb 2026</span><a href="https://www.youtube.com/watch?v=T5KnkhG_obc" target="_blank" rel="noopener">PBS NewsHour</a>: Despite setback, researchers uncover new findings at Antarctica's Thwaites Glacier</li>
+        <li><span class="date">Jan 2026</span><a href="https://www.nytimes.com/2026/01/27/climate/antarctica-thwaites-radar.html" target="_blank" rel="noopener">The New York Times</a>: Scanning Ice for Monster Cracks, on This World and Another <em>(featured/quoted)</em></li>
+        <li><span class="date">Jun 2024</span><a href="https://thedailytexan.com/2024/06/28/ut-student-hosts-video-podcast-featuring-conversations-with-expert-guests/" target="_blank" rel="noopener">The Daily Texan</a>: UT student hosts video podcast featuring conversations with expert guests</li>
+      </ul>
+      <h3 class="sub">Funding &amp; honors</h3>
+      <ul class="plain compact">
+        <li>UT Undergraduate Research Fellowship (2025)</li>
+        <li>UT Undergraduate Research Travel Fund (2025)</li>
+        <li>Jackson School Undergraduate Honors Research Program</li>
+        <li>Louis &amp; Elizabeth Scherck Geology Scholarship (2022–25)</li>
+        <li>Dell Scholar · Jackson Scholar · National Hispanic Scholar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section class="beyond" id="beyond">
+  <div class="wrap">
+    <h2 class="section-title"><span>04</span>Beyond the lab</h2>
+    <div class="beyond-grid">
+      <article class="podcast">
+        <p class="tag">Founder, host &amp; producer · 2023 – 2025</p>
+        <h3>On the Subject of Life<sup>*</sup></h3>
+        <p>A long-form interview podcast, with episodes often running over two hours, featuring scientists and domain experts on geology, glaciology, conservation, history, language, and more. I handled research, production, and outreach for 19+ episodes, with guests including Dr. Dan Stanzione (UT Austin AVP for Research) and Dr. Michael Pyrcz.</p>
+        <a class="btn" href="https://www.heightsofhumanitypodcast.com" target="_blank" rel="noopener">Listen &amp; watch →</a>
+      </article>
+      <article>
+        <p class="tag">Technical project lead · 2024</p>
+        <h3>DOE Geothermal Collegiate Competition</h3>
+        <p>I led a six-person applied science and engineering team that designed a dual-use, carbon-capturing greenhouse complex in Presidio County, Texas, powered by direct-use geothermal energy.</p>
+      </article>
+      <article class="travel">
+        <p class="tag">Travel &amp; the outdoors</p>
+        <h3>Places the work has taken me</h3>
+        <ul class="places">
+          <li>Amundsen Sea, Antarctica</li>
+          <li>Vienna, Austria</li>
+          <li>San Salvador, Bahamas</li>
+          <li>Big Bend, Texas</li>
+          <li>Port Aransas, Texas</li>
+        </ul>
+        <p class="note">More travel writing and photos coming soon.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap foot-inner">
+    <div>
+      <p class="foot-name">Jason A. Bott</p>
+      <p>Open to graduate research positions and collaborations in glaciology, geophysics, and computational earth science.</p>
+    </div>
+    <div class="foot-links">
+      <a href="mailto:jbott@utexas.edu">jbott@utexas.edu</a>
+      <a href="assets/docs/Jason_Bott_CV.pdf">Curriculum vitae (PDF)</a>
+      <a href="https://www.heightsofhumanitypodcast.com" target="_blank" rel="noopener">Podcast</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
