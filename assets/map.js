@@ -14,7 +14,8 @@
     "Los Glaciares, Argentina":[-49.33,-72.9],"Fitz Roy massif, Argentina":[-49.27,-73.04],"Patagonia, Argentina":[-50.3,-72.3],"Torres del Paine, Chile":[-51.0,-73.0],
     "Angel Peak, New Mexico":[36.55,-107.86],"White Rock Canyon, New Mexico":[35.8,-106.2],"Mount Rainier, Washington":[46.79,-121.73],"Pacific Northwest":[47.6,-122.9],
     "Holguín, Cuba":[20.89,-76.26],"Monahans, TX":[31.65,-102.8],"McKittrick Canyon, Guadalupe Mountains, Texas":[31.98,-104.75],"Guadalupe Mountains":[31.9,-104.9],
-    "San Salvador, Bahamas":[24.05,-74.5]
+    "San Salvador, Bahamas":[24.05,-74.5],
+    "Monjeau Peak Lookout, New Mexico":[33.43,-105.73],"Sunset Reef, New Mexico":[32.24,-104.47]
   };
   var FIELD=[
     {n:"Thwaites Glacier, Amundsen Sea",ll:[-74.5,-106],d:"Airborne radar season aboard RV Araon, 2025–26"},
