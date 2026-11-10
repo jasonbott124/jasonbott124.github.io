@@ -258,3 +258,4 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .t-pano-s figcaption b{display:block;font:500 12px var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
 @media (max-width:560px){.t-pano-s img{height:200px}}
 .pano-hint{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ice-muted);margin-bottom:10px}
+.pod-photos{grid-template-rows:1fr 1fr}.pod-photos img{min-height:200px}
