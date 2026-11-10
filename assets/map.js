@@ -2,7 +2,7 @@
   if(!window.L) return;
   var C={
     "Salzkammergut, Austria":[47.72,13.55],"Hallstatt, Austria":[47.56,13.65],"Gosaukamm, Austria":[47.53,13.48],
-    "Laugavegur Trail, Iceland":[63.9,-19.1],"Bergen, Norway":[60.39,5.32],"Delft, Netherlands":[52.01,4.36],
+    "Laugavegur Trail, Iceland":[63.9,-19.1],"Landmannahellir, Iceland":[64.05,-19.22],"Bergen, Norway":[60.39,5.32],"Delft, Netherlands":[52.01,4.36],
     "Glenfinnan to Old Forge, Scotland":[57.0,-5.6],"North Sea, England":[55.6,-1.6],"French Alps":[45.6,6.0],
     "Dolomites, Italy":[46.27,11.85],"Rome, Italy":[41.9,12.49],"Ravenna, Italy":[44.42,12.2],"Pompeii, Italy":[40.75,14.49],"Mt. Vesuvius, Italy":[40.82,14.43],
     "Istanbul, Türkiye":[41.01,28.98],"Lesvos, Greece":[39.2,26.25],"Athens, Greece":[37.98,23.73],"Carthage, Tunisia":[36.85,10.33],"Croatia":[42.65,18.09],
