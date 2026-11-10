@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -43,6 +44,7 @@
       <a class="btn ghost" href="https://www.linkedin.com/in/jason-bott-a52944270/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn ghost" href="https://github.com/jasonbott124" target="_blank" rel="noopener">GitHub</a>
       <a class="btn ghost" href="https://scholar.google.com/citations?user=31Ae8UkAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      <a class="btn ghost" href="https://www.inaturalist.org/people/colum-river-flood-basalts-xd" target="_blank" rel="noopener">iNaturalist</a>
     </div>
   </div>
   <p class="hero-caption">Airborne radar survey over an ice front, Amundsen Sea Embayment, 2026 · Footage: The New York Times</p>
@@ -323,6 +325,10 @@
         <button class="on" data-f="all">All</button><button data-f="asia">Asia</button><button data-f="europe">Europe</button><button data-f="americas">Americas</button><button data-f="oceania">Oceania</button><button data-f="africa">Africa</button>
       </div>
     </div>
+    <div class="map-wrap">
+      <div id="travel-map" role="region" aria-label="Map of photo locations"></div>
+      <p class="map-key"><span class="dot t"></span>Travel <span class="dot f"></span>Fieldwork &amp; conferences · click a pin to see photos</p>
+    </div>
     <p class="pano-hint">Panoramas · scroll →</p>
     <div class="pano-strip" aria-label="Panoramas" tabindex="0">
       <figure class="t-pano-s" data-region="europe"><img src="assets/img/travel/austria-pano.jpg" alt="Panorama of hay barns in a green valley under low cloud, Salzkammergut, Austria" loading="lazy"><figcaption><b>Salzkammergut, Austria</b>Hay barns under low cloud</figcaption></figure>
@@ -430,6 +436,7 @@
       <a href="https://scholar.google.com/citations?user=31Ae8UkAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
       <a href="https://github.com/jasonbott124" target="_blank" rel="noopener">GitHub</a>
       <a href="https://ig.utexas.edu/students/jason-bott/" target="_blank" rel="noopener">UTIG profile</a>
+      <a href="https://www.inaturalist.org/people/colum-river-flood-basalts-xd" target="_blank" rel="noopener">iNaturalist</a>
       <a href="https://www.heightsofhumanitypodcast.com" target="_blank" rel="noopener">Podcast</a>
     </div>
   </div>
@@ -465,5 +472,7 @@
   try{var s=localStorage.getItem('bioLang');if(s)set(s);}catch(e){}
 })();
 </script>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/map.js"></script>
 </body>
 </html>

@@ -259,3 +259,19 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 @media (max-width:560px){.t-pano-s img{height:200px}}
 .pano-hint{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ice-muted);margin-bottom:10px}
 .pod-photos{grid-template-rows:1fr 1fr}.pod-photos img{min-height:200px}
+.map-wrap{margin:0 0 36px}
+#travel-map{height:440px;width:100%;border:1px solid rgba(255,255,255,.12);background:#0c1620}
+.map-key{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
+.map-key .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 6px 0 14px;vertical-align:-1px}
+.map-key .dot:first-child{margin-left:0}
+.map-key .dot.t{background:var(--accent)}.map-key .dot.f{background:var(--ink);border:2px solid var(--ice)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--ink);color:var(--ice);border-radius:2px}
+.leaflet-popup-content{margin:12px 14px}
+.pop b{display:block;font:500 12px var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.pop span{display:block;font:12px var(--mono);color:var(--ice-muted);margin:2px 0 8px}
+.pop a{font:12px var(--mono);color:var(--accent)!important}
+.pop-thumbs{display:grid;grid-template-columns:repeat(2,1fr);gap:4px}
+.pop-thumbs img{width:120px;height:80px;object-fit:cover;cursor:pointer}
+.pop-thumbs img:hover{outline:2px solid var(--accent)}
+.flash{outline:3px solid var(--accent);outline-offset:4px;transition:outline-color 1s}
+@media (max-width:560px){#travel-map{height:320px}.pop-thumbs img{width:100px;height:70px}}
