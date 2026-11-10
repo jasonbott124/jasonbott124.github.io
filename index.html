@@ -169,6 +169,8 @@
 
     <h3 class="sub light">The season in pictures</h3>
     <div class="s-grid">
+      <figure><img src="assets/img/ant/adelie.jpg" alt="An Adélie penguin on the sea ice, flippers out" loading="lazy"><figcaption>An Adélie penguin comes to say hello</figcaption></figure>
+      <figure><img src="assets/img/ant/sea-ice-sunset.jpg" alt="Low sun over pack ice with icebergs on the horizon" loading="lazy"><figcaption>Midnight sun over the pack ice, January 2026</figcaption></figure>
       <figure><img src="assets/img/ant/nyt-boom.jpg" alt="Team fitting an antenna boom to the helicopter on the Araon's deck" loading="lazy"><figcaption>Fitting the antenna booms on deck · Photo: Chang W. Lee/The New York Times</figcaption></figure>
       <figure><img src="assets/img/ant/nyt-hangar.jpg" alt="Looking out from the hangar beneath the helicopter toward the helideck" loading="lazy"><figcaption>From the hangar, beneath the radar helicopter · Photo: Chang W. Lee/The New York Times</figcaption></figure>
       <figure><img src="assets/img/ant/processing-desk.jpg" alt="Crowded processing table with laptops, flight-plan maps, a data server, and cables" loading="lazy"><figcaption>The radar processing table: flight plans, QC checklists, and a lot of cables</figcaption></figure>
@@ -323,8 +325,19 @@
         <button class="on" data-f="all">All</button><button data-f="asia">Asia</button><button data-f="europe">Europe</button><button data-f="americas">Americas</button><button data-f="oceania">Oceania</button><button data-f="africa">Africa</button>
       </div>
     </div>
-    <figure class="t-pano"><img src="assets/img/travel/austria-pano.jpg" alt="Panorama of hay barns in a green valley under low cloud, Salzkammergut, Austria" loading="lazy"><figcaption><b>Salzkammergut, Austria</b>Hay barns under low cloud</figcaption></figure>
-    <figure class="t-pano" data-region="europe"><img src="assets/img/travel/iceland-pano.jpg" alt="Panorama of a gravel plateau with snow patches and distant mountains, Laugavegur Trail, Iceland" loading="lazy"><figcaption><b>Laugavegur Trail, Iceland</b>Crossing the high plateau</figcaption></figure>
+    <p class="pano-hint">Panoramas · scroll →</p>
+    <div class="pano-strip" aria-label="Panoramas" tabindex="0">
+      <figure class="t-pano-s" data-region="europe"><img src="assets/img/travel/austria-pano.jpg" alt="Panorama of hay barns in a green valley under low cloud, Salzkammergut, Austria" loading="lazy"><figcaption><b>Salzkammergut, Austria</b>Hay barns under low cloud</figcaption></figure>
+      <figure class="t-pano-s" data-region="europe"><img src="assets/img/travel/iceland-pano.jpg" alt="Panorama of a gravel plateau with snow patches and distant mountains, Laugavegur Trail, Iceland" loading="lazy"><figcaption><b>Laugavegur Trail, Iceland</b>Crossing the high plateau</figcaption></figure>
+      <figure class="t-pano-s" data-region="oceania"><img src="assets/img/travel/pano-stewart-beach.jpg" alt="Rakiura coastline, Stewart Island, New Zealand" loading="lazy"><figcaption><b>Stewart Island, New Zealand</b>Rakiura coastline</figcaption></figure>
+      <figure class="t-pano-s" data-region="americas"><img src="assets/img/travel/pano-fitzroy.jpg" alt="Laguna Sucia below the Fitz Roy massif, Los Glaciares, Argentina" loading="lazy"><figcaption><b>Los Glaciares, Argentina</b>Laguna Sucia below the Fitz Roy massif</figcaption></figure>
+      <figure class="t-pano-s" data-region="oceania"><img src="assets/img/travel/pano-milford.jpg" alt="Milford Sound in the clouds, Fiordland, New Zealand" loading="lazy"><figcaption><b>Fiordland, New Zealand</b>Milford Sound in the clouds</figcaption></figure>
+      <figure class="t-pano-s" data-region="europe"><img src="assets/img/travel/pano-laugavegur.jpg" alt="Moss, snow and the ice cap beyond, Laugavegur Trail, Iceland" loading="lazy"><figcaption><b>Laugavegur Trail, Iceland</b>Moss, snow and the ice cap beyond</figcaption></figure>
+      <figure class="t-pano-s" data-region="oceania"><img src="assets/img/travel/pano-stewart-dunes.jpg" alt="Dunes at dusk, Stewart Island, New Zealand" loading="lazy"><figcaption><b>Stewart Island, New Zealand</b>Dunes at dusk</figcaption></figure>
+      <figure class="t-pano-s" data-region="europe"><img src="assets/img/travel/pano-dolomites.jpg" alt="Summit cross above the Pale di San Martino, Dolomites, Italy" loading="lazy"><figcaption><b>Dolomites, Italy</b>Summit cross above the Pale di San Martino</figcaption></figure>
+      <figure class="t-pano-s" data-region="oceania"><img src="assets/img/travel/pano-stewart-forest.jpg" alt="Crown ferns and podocarp forest, Stewart Island, New Zealand" loading="lazy"><figcaption><b>Stewart Island, New Zealand</b>Crown ferns and podocarp forest</figcaption></figure>
+      <figure class="t-pano-s" data-region="asia"><img src="assets/img/travel/pano-japan-temple.jpg" alt="A temple courtyard, Japan" loading="lazy"><figcaption><b>Japan</b>A temple courtyard</figcaption></figure>
+    </div>
     <div class="t-grid">
       <figure class="t-item" data-region="asia"><img src="assets/img/travel/java-merapi-view.jpg" alt="Merapi from the slopes of Merbabu, Central Java, Indonesia" loading="lazy"><figcaption><b>Central Java, Indonesia</b>Merapi from the slopes of Merbabu</figcaption></figure>
       <figure class="t-item" data-region="europe"><img src="assets/img/travel/dolomites.jpg" alt="Alpine meadow below the peaks, Dolomites, Italy" loading="lazy"><figcaption><b>Dolomites, Italy</b>Alpine meadow below the peaks</figcaption></figure>
@@ -401,6 +414,7 @@
       <figure class="t-item" data-region="europe"><img src="assets/img/travel/scot-bothy.jpg" alt="A bothy stop, Glenfinnan to Old Forge trail, Scotland" loading="lazy"><figcaption><b>Glenfinnan to Old Forge, Scotland</b>A bothy stop</figcaption></figure>
       <figure class="t-item" data-region="europe"><img src="assets/img/travel/slug.jpg" alt="A large black slug on the trail, Gosaukamm, Austria" loading="lazy"><figcaption><b>Gosaukamm, Austria</b>A large black slug on the trail</figcaption></figure>
       <figure class="t-item" data-region="europe"><img src="assets/img/travel/scrabble.jpg" alt="Scrabble, with opinions, Delft, Netherlands" loading="lazy"><figcaption><b>Delft, Netherlands</b>Scrabble, with opinions</figcaption></figure>
+      <figure class="t-item" data-region="europe"><img src="assets/img/travel/croatia-group.jpg" alt="Study abroad group on a hilltop, Croatia" loading="lazy"><figcaption><b>Croatia</b>Six weeks of study abroad, with the crew</figcaption></figure>
     </div>
   </div>
 </section>
@@ -434,7 +448,7 @@
   vids.forEach(function(v){ if(io){io.observe(v);} else {v.src=v.dataset.src;v.autoplay=true;} });
   var btns=document.querySelectorAll('.filters button');var panos=document.querySelectorAll('.t-pano');
   btns.forEach(function(b){b.addEventListener('click',function(){
-    btns.forEach(function(x){x.classList.toggle('on',x===b);});panos.forEach(function(p){p.hidden=!(b.dataset.f==='all'||b.dataset.f===(p.dataset.region||'europe'));});
+    btns.forEach(function(x){x.classList.toggle('on',x===b);});panos.forEach(function(p){p.hidden=!(b.dataset.f==='all'||b.dataset.f===(p.dataset.region||'europe'));});document.querySelectorAll('.t-pano-s').forEach(function(p){p.hidden=!(b.dataset.f==='all'||b.dataset.f===p.dataset.region);});
     document.querySelectorAll('.t-item').forEach(function(f){
       f.hidden = !(b.dataset.f==='all'||f.dataset.region===b.dataset.f);
     });

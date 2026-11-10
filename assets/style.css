@@ -250,3 +250,11 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .lang-toggle button.on{background:var(--ink);color:#fff}
 .bio[hidden]{display:none}
 .bio[lang="ja"] p{font-family:"Noto Serif JP",var(--serif);font-size:18px;line-height:1.9}
+.pano-strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 0 20px;padding-bottom:10px;scrollbar-color:var(--accent) transparent}
+.t-pano-s{flex:0 0 auto;margin:0;scroll-snap-align:start}
+.t-pano-s[hidden]{display:none}
+.t-pano-s img{height:300px;width:auto;max-width:none;display:block}
+.t-pano-s figcaption{margin-top:8px;font:12px var(--mono);color:var(--ice-muted);max-width:90vw}
+.t-pano-s figcaption b{display:block;font:500 12px var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:560px){.t-pano-s img{height:200px}}
+.pano-hint{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ice-muted);margin-bottom:10px}
