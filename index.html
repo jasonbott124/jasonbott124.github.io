@@ -87,49 +87,169 @@
 <section class="research wrap" id="research">
   <h2 class="section-title"><span>01</span>Research</h2>
 
-  <article class="project feature">
-    <div class="project-media">
-      <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener">
-        <img src="assets/img/egu2024-poster.jpg" alt="EGU 2024 poster: The potential role of anomalous geothermal flux for enhanced basal melting and suppressed ice velocity at Haynes Glacier" loading="lazy">
-      </a>
-      <p class="caption">EGU 2024, Vienna: anomalous geothermal flux and a "sticky spot" at Haynes Glacier. <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
-      <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener" class="poster2">
-        <img src="assets/img/egu-poster.jpg" alt="EGU 2025 poster: Why assumptions and uncertainties in bed DEMs matter, Haynes Glacier" loading="lazy">
-      </a>
-      <p class="caption">EGU 2025, Vienna: why bed DEM assumptions matter. <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
-    </div>
-    <div class="project-body">
+  <div class="stage" id="stage">
+
+  <!-- ARC -->
+  <article class="panel" id="proj-arc" role="tabpanel" aria-labelledby="tab-arc">
+    <div class="panel-head">
       <p class="tag">UTIG · 2022 – present</p>
-      <h3>Geothermal heat and bed uncertainty at Haynes Glacier</h3>
-      <p class="sub-tag">EGU 2024 · Anomalous geothermal flux</p>
-      <p>Near its grounding line, Haynes Glacier has a "sticky spot," a patch of ice moving far slower than the flow around it. Upstream, radar shows internal layers drawn sharply down toward the bed. I proposed that anomalous geothermal heat (or strong basal friction) melts basal ice upstream, pulling cold surface snow deep into the ice column, which then refreezes to the bed downstream as the ice thins, producing the slow patch. I tested the idea with coupled thermal and kinematic models, with implications for heat flux and ice-stream stability in West Antarctica.</p>
-      <p class="sub-tag">EGU 2025 · Why bed DEMs matter</p>
-      <p>Bed topography is the most important boundary condition for an ice model, yet the standard bed products each break down at Haynes: Bedmap struggles with its trough-dominated bed, and BedMachine's mass-conservation approach struggles with heterogeneous geothermal flux from nearby volcanoes like Mt. Takahe. Along a flowband traced from MEaSUREs surface velocity, I built bed DEMs from the raw radar using deterministic interpolation (tension splines, inverse-distance weighting, curvature minimization) and conditional stochastic simulation of bed roughness. I then fed each into a 2.5D shallow-ice model and compared its simulated layers with the dipping reflectors observed in the radar, showing how bed assumptions shape model output.</p>
-      <ul class="chips"><li>Ice-penetrating radar</li><li>Geostatistics</li><li>Shallow ice approximation</li><li>West Antarctica</li></ul>
-      <a class="more" href="https://doi.org/10.5194/egusphere-egu24-14072" target="_blank" rel="noopener">EGU24 abstract →</a>&nbsp;&nbsp;
-      <a class="more" href="https://doi.org/10.5194/egusphere-egu25-14386" target="_blank" rel="noopener">EGU25 abstract →</a>
+      <h3>The Takahe–Haynes arc: a slow glacier, buried layers and a volcano upstream</h3>
+      <p class="lede-sm">Three posters, one question that kept getting bigger. What started as an odd patch of slow ice at the edge of Haynes Glacier became a thesis on recent volcanism beneath the West Antarctic Ice Sheet.</p>
+    </div>
+    <ol class="arc">
+      <li>
+        <a href="assets/docs/Bott_AGU2023_poster.pdf" target="_blank" rel="noopener"><img src="assets/img/agu2023-poster.jpg" alt="AGU 2023 poster: Potential sources for a velocity anomaly at the grounding line of Haynes Glacier" loading="lazy"></a>
+        <span class="arc-yr">AGU 2023 · San Francisco</span>
+        <b>A velocity anomaly at the grounding line</b>
+        <span class="arc-note">My first-ever poster. Rough around the edges, and where it all started.</span>
+      </li>
+      <li>
+        <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener"><img src="assets/img/egu2024-poster.jpg" alt="EGU 2024 poster: The potential role of anomalous geothermal flux at Haynes Glacier" loading="lazy"></a>
+        <span class="arc-yr">EGU 2024 · Vienna</span>
+        <b>Anomalous geothermal flux and a sticky spot</b>
+      </li>
+      <li>
+        <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener"><img src="assets/img/egu-poster.jpg" alt="EGU 2025 poster: Why assumptions and uncertainties in bed DEMs matter, Haynes Glacier" loading="lazy"></a>
+        <span class="arc-yr">EGU 2025 · Vienna</span>
+        <b>Why bed DEM assumptions matter</b>
+      </li>
+      <li class="arc-next">
+        <button type="button" data-open="takahe">
+          <span class="arc-yr">Honors thesis · 2026</span>
+          <b>Late-Holocene volcanism at Mt. Takahe</b>
+          <span class="arc-note">Where the arc leads. See the thesis →</span>
+        </button>
+      </li>
+    </ol>
+    <div class="panel-body two">
+      <div class="figs">
+        <figure><img src="assets/img/research/haynes-velocity.jpg" alt="Ice velocity map showing a slow patch about 8.5 by 6.2 km at the Haynes Glacier grounding line" loading="lazy"><figcaption>The "sticky spot": an 8.5 × 6.2 km patch of near-stagnant ice between two fast ice streams. From my AGU 2023 poster.</figcaption></figure>
+        <figure><img src="assets/img/research/haynes-radargram.jpg" alt="Radargram across the Haynes grounding line with the sticky spot and dipping layers boxed in red" loading="lazy"><figcaption>Radar profile across the grounding line. Internal layers dip down through nearly half the ice thickness (boxed). From my AGU 2023 poster.</figcaption></figure>
+      </div>
+      <div class="story">
+        <p class="sub-tag">2023 · The anomaly</p>
+        <p>Fast-flowing ice in West Marie Byrd Land stops just short of the grounding line, right beside the Mt. Murphy volcano and downstream of the active Mt. Takahe. Radar over the slow patch shows something stranger still: layers drawn down through nearly half the ice column along a lineament. A simple steady-state temperature model put the bed at about −9.6 °C, nothing unusual, so what was pulling the layers down? One possibility: an upstream transient. Takahe's most recent activity is roughly 2,000 years old, and layers disturbed there would take 1,000–3,000 years to reach where we see them today.</p>
+        <p class="sub-tag">2024 · Heat from below</p>
+        <p>I proposed that anomalous geothermal heat (or strong basal friction) melts basal ice upstream, pulling cold surface snow deep into the ice column, which then refreezes to the bed downstream as the ice thins, producing the slow patch. I tested the idea with coupled thermal and kinematic models, with implications for heat flux and ice-stream stability in West Antarctica.</p>
+        <p class="sub-tag">2025 · Can we trust the bed?</p>
+        <p>Bed topography is the most important boundary condition for an ice model, yet the standard bed products each break down at Haynes: Bedmap struggles with its trough-dominated bed, and BedMachine's mass-conservation approach struggles with heterogeneous geothermal flux from nearby volcanoes. Along a flowband traced from MEaSUREs surface velocity, I built bed DEMs from the raw radar using deterministic interpolation (tension splines, inverse-distance weighting, curvature minimization) and conditional stochastic simulation of bed roughness. I then fed each into a 2.5D shallow-ice model and compared its simulated layers with the dipping reflectors observed in the radar.</p>
+        <ul class="chips"><li>Ice-penetrating radar</li><li>Geostatistics</li><li>Shallow ice approximation</li><li>West Antarctica</li></ul>
+        <a class="more" href="https://doi.org/10.5194/egusphere-egu24-14072" target="_blank" rel="noopener">EGU24 abstract →</a>&nbsp;&nbsp;
+        <a class="more" href="https://doi.org/10.5194/egusphere-egu25-14386" target="_blank" rel="noopener">EGU25 abstract →</a>
+      </div>
     </div>
   </article>
 
-  <div class="project-grid">
-    <article class="project">
-      <p class="tag">Honors thesis</p>
+  <!-- TAKAHE -->
+  <article class="panel" id="proj-takahe" role="tabpanel" aria-labelledby="tab-takahe" hidden>
+    <div class="panel-head">
+      <p class="tag">Honors thesis · Jackson School of Geosciences · 2026</p>
       <h3>A case for late-Holocene subglacial volcanism at Mount Takahe</h3>
-      <p>I'm building the case for recent subglacial volcanism at Mount Takahe in the Thwaites catchment, using ice-penetrating radar, and asking how it might affect shear-margin mechanics. The work combines IPR observations with thermally coupled ice-flow models (shallow ice approximation and 3D finite-difference Stokes flow).</p>
-      <ul class="chips"><li>Mt. Takahe</li><li>Thwaites Glacier</li><li>Stokes flow</li><li>Thermomechanics</li></ul>
-    </article>
-    <article class="project">
-      <p class="tag">Oden Institute · Advisor: Dr. Timothy Keitt</p>
+      <p class="lede-sm">If the Haynes layers are an echo of something upstream, the obvious suspect is Mt. Takahe. My thesis builds the case that Takahe has been active beneath the ice in the last few thousand years, and asks what that heat does to the ice flowing past it.</p>
+    </div>
+    <div class="panel-body two">
+      <div class="figs">
+        <figure><img src="assets/img/research/thwaites-radargram.jpg" alt="Radargram upstream in the Thwaites catchment with a disrupted column of internal layers boxed in red" loading="lazy"><figcaption>Disrupted internal layers upstream in the Thwaites catchment (boxed), from a 2018 CReSIS radar line. From my AGU 2023 poster.</figcaption></figure>
+        <figure><img src="assets/img/research/takahe-transient.jpg" alt="Ice velocity map with the radar flight line in red crossing the catchment upstream of the Haynes slow patch" loading="lazy"><figcaption>Where that radar line runs: upstream of the Haynes slow patch, between Takahe and the coast.</figcaption></figure>
+      </div>
+      <div class="story">
+        <p class="sub-tag">The question</p>
+        <p>Subglacial volcanism is rarely included in models of how the West Antarctic Ice Sheet will lose ice and raise sea level. If heat from a volcano like Takahe is melting the bed and weakening the ice around it, that belongs in those models. The first step is showing that the volcanism is real and recent.</p>
+        <p class="sub-tag">The approach</p>
+        <p>I trace radar isochrones (internal layers of known age) through the Thwaites catchment and look for the fingerprints of basal melt: layers drawn down toward the bed, disrupted columns and anomalous bed reflectivity. I then test whether volcanic heating can reproduce them using thermally coupled ice-flow models, from a shallow-ice flowband to 3D finite-difference Stokes flow, and ask how that heat affects shear-margin mechanics.</p>
+        <p class="sub-tag">Where it's going</p>
+        <p>The thesis is being written up as a manuscript for 2027.</p>
+        <ul class="chips"><li>Mt. Takahe</li><li>Thwaites Glacier</li><li>Radar isochrones</li><li>Stokes flow</li><li>Thermomechanics</li></ul>
+        <button type="button" class="more as-link" data-open="arc">← Back to the Takahe–Haynes arc</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- BIRDSONG -->
+  <article class="panel" id="proj-birdsong" role="tabpanel" aria-labelledby="tab-birdsong" hidden>
+    <div class="panel-head">
+      <p class="tag">Oden Institute · Advisor: Dr. Timothy Keitt · 2026</p>
       <h3>Rivers, birdsong &amp; the Amazon</h3>
-      <p>In this independent project, I'm using BirdNET, an open-source machine-learning tool, to map variation in antbird (Thamnophilidae) song across geographic space. I'm asking whether that variation tracks the geomorphological evolution of Amazonian rivers, and whether it can help with population assessment.</p>
-      <ul class="chips"><li>Machine learning</li><li>Bioacoustics</li><li>Geomorphology</li></ul>
-    </article>
-    <article class="project">
-      <p class="tag">Collaborations</p>
+      <p class="lede-sm">Do Amazonian rivers split populations of birds that could simply fly across them? I'm listening for the answer in their songs.</p>
+    </div>
+    <div class="panel-body two">
+      <div class="figs">
+        <div class="fig-pending"><span>Preliminary results · December 2026</span><p>Song clusters, distance-decay and river-permeability figures will go here.</p></div>
+      </div>
+      <div class="story">
+        <p class="sub-tag">The question</p>
+        <p>Antbirds (Thamnophilidae) are a large, mostly sedentary family of Neotropical forest birds. Large Amazonian rivers are thought to act as barriers to many species, but how strong a barrier depends on the river: its width, its shape and how it has migrated across the landscape over time.</p>
+        <p class="sub-tag">The approach</p>
+        <p>I use BirdNET, an open-source machine-learning model, to pull antbird songs out of recordings, then cluster song features and compare how they vary with geographic distance and with river size and shape. One idea I'm testing is whether a river "permeability" parameter from a leaky-barrier model of animal movement can explain the patterns.</p>
+        <p class="sub-tag">Why it matters</p>
+        <p>If song can track population structure, passive acoustic monitoring becomes a cheap way to assess cryptic, hard-to-survey species across whole regions. It's also where my geoscience background meets ecology directly: the geomorphic history of a river written into the songs of the birds beside it.</p>
+        <ul class="chips"><li>Machine learning</li><li>Bioacoustics</li><li>Geomorphology</li><li>Amazonia</li></ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- GEOTHERMAL -->
+  <article class="panel" id="proj-geothermal" role="tabpanel" aria-labelledby="tab-geothermal" hidden>
+    <div class="panel-head">
+      <p class="tag">DOE Geothermal Collegiate Competition · Technical project lead · 2024</p>
+      <h3>Geothermal greenhouses for Presidio County, Texas</h3>
+      <p class="lede-sm">Can the heat beneath one of the emptiest corners of Texas grow food and pull carbon out of the air? Our team designed a geothermal-powered greenhouse and direct-air-capture complex for Presidio County.</p>
+    </div>
+    <div class="panel-body two">
+      <div class="figs">
+        <figure class="chart" aria-label="Surface heat flow comparison">
+          <p class="chart-t">Surface heat flow, mW/m²</p>
+          <div class="bar"><span>World continental average</span><i style="width:45.8%"></i><b>71</b></div>
+          <div class="bar hl"><span>Presidio “interior”</span><i style="width:61.3%"></i><b>95</b></div>
+          <div class="bar hl2"><span>Presidio “border”</span><i style="width:100%"></i><b>155</b></div>
+          <p class="chart-t" style="margin-top:22px">Depth to 150 °C, m</p>
+          <div class="bar hl2"><span>Border</span><i style="width:53.2%"></i><b>~2,500</b></div>
+          <div class="bar hl"><span>Interior</span><i style="width:100%"></i><b>~4,700</b></div>
+          <figcaption>Heat flow near the Rio Grande runs more than twice the continental average, thanks to a shallow basement (~2,400 m), radiogenic heat and crust thinned by Basin &amp; Range extension. Data: Wisian et al. (2024), Presidio County Geothermal Assessment, Bureau of Economic Geology.</figcaption>
+        </figure>
+        <div class="stat-row">
+          <div><b>~136</b><span>greenhouses heated from ~5 MW of direct heat</span></div>
+          <div><b>~43,000 t</b><span>CO₂ captured per year</span></div>
+        </div>
+      </div>
+      <div class="story">
+        <p class="sub-tag">The place</p>
+        <p>Presidio County sits in the Trans-Pecos, where the Basin &amp; Range meets the Trans-Pecos magmatic province. It's rural, low-income and sparsely populated, with fewer people per square mile than the Gobi Desert, and it has low property taxes, rail access, proximity to the US–Mexico produce trade and an existing solar farm and grid battery. Its geology makes it one of the warmest places under Texas.</p>
+        <p class="sub-tag">The design</p>
+        <p>Greenhouses need two things a geothermal plant can supply: steady heat and CO₂. We paired direct-use geothermal heating with direct air capture, feeding captured CO₂ into the greenhouses and selling the excess. The lower-grade "interior" resource is a good match for greenhouse heat. We modeled plant scenarios in GEOPHIRES from the Bureau of Economic Geology's assessment and built the economics from USDA REAP grants and loans, the 45Q carbon-capture credit and saved heating costs. A closed-loop design keeps working fluid out of the county's aquifers.</p>
+        <p class="sub-tag">The reality check</p>
+        <p>We met with Village Farms, which runs large greenhouses in nearby Marfa. Their heat and CO₂ needs swing with the seasons, and buying CO₂ still costs more than burning natural gas, so a year-round geothermal investment only pencils out with subsidies. That conversation shaped our final recommendation more than any model run.</p>
+        <ul class="chips"><li>GEOPHIRES</li><li>Direct-use geothermal</li><li>Direct air capture</li><li>Techno-economics</li></ul>
+        <p class="team">Team: Lucero Tunjar Cruz, Jason Bott, Nicolaas Wooters, Adam Kinney, Andrew Flynn</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- COLLABS -->
+  <article class="panel" id="proj-collabs" role="tabpanel" aria-labelledby="tab-collabs" hidden>
+    <div class="panel-head">
+      <p class="tag">Collaborations · UTIG</p>
       <h3>Radioglaciology beyond Antarctica</h3>
-      <p>I've contributed to team studies of airborne radar radiometry and specular subglacial terrain on the Devon Ice Cap, Canada; ice-fabric anisotropy at Thwaites; and a possible ephemeral salty lake beneath the former Laurentide Ice Sheet.</p>
+      <p class="lede-sm">Airborne radar sees through ice anywhere. I've contributed to team studies that use it from the Canadian Arctic to the vanished ice sheets of North America.</p>
+    </div>
+    <div class="panel-body">
+      <ul class="collab-list">
+        <li><b>Devon Ice Cap, Canada</b><span>Airborne radar radiometry and coastline mapping of specular subglacial terrain on Devon Island. Gerekos et al., EGU 2023.</span></li>
+        <li><b>Thwaites Glacier, West Antarctica</b><span>Radar-derived ice-fabric anisotropy and anisotropic scattering. Li et al., IGS Radioglaciology 2026.</span></li>
+        <li><b>Laurentide Ice Sheet</b><span>On the possibility of a substantial but ephemeral salty lake beneath the former Laurentide Ice Sheet. Yan et al., AGU 2026.</span></li>
+      </ul>
       <ul class="chips"><li>Devon Island</li><li>Ice fabric</li><li>Paleo-ice sheets</li></ul>
-    </article>
+    </div>
+  </article>
+
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Research projects">
+    <button role="tab" id="tab-arc" aria-controls="proj-arc" aria-selected="true" data-open="arc"><span class="tag">UTIG · 2022–</span><b>The Takahe–Haynes arc</b><em>Three posters on a slow glacier and dipping layers</em></button>
+    <button role="tab" id="tab-takahe" aria-controls="proj-takahe" aria-selected="false" data-open="takahe"><span class="tag">Honors thesis</span><b>Late-Holocene volcanism at Mt. Takahe</b><em>Radar isochrones and volcanic heat</em></button>
+    <button role="tab" id="tab-birdsong" aria-controls="proj-birdsong" aria-selected="false" data-open="birdsong"><span class="tag">Oden Institute</span><b>Rivers, birdsong &amp; the Amazon</b><em>BirdNET and river barriers</em></button>
+    <button role="tab" id="tab-geothermal" aria-controls="proj-geothermal" aria-selected="false" data-open="geothermal"><span class="tag">DOE competition</span><b>Geothermal greenhouses</b><em>Heat and CO₂ for Presidio County</em></button>
+    <button role="tab" id="tab-collabs" aria-controls="proj-collabs" aria-selected="false" data-open="collabs"><span class="tag">Collaborations</span><b>Radioglaciology beyond Antarctica</b><em>Devon, ice fabric, Laurentide</em></button>
   </div>
 </section>
 
@@ -305,6 +425,7 @@
         <p class="tag">Technical project lead · 2024</p>
         <h3>DOE Geothermal Collegiate Competition</h3>
         <p>I led a six-person applied science and engineering team that designed a dual-use, carbon-capturing greenhouse complex in Presidio County, Texas, powered by direct-use geothermal energy.</p>
+        <a class="more" href="#proj-geothermal" data-open="geothermal">See the project ↑</a>
       </article>
       <article class="travel">
                 <h3>Travel &amp; the Outdoors</h3>
@@ -479,5 +600,32 @@
 </script>
 <script src="assets/vendor/leaflet/leaflet.js"></script>
 <script src="assets/map.js"></script>
+<script>
+(function(){
+  var ids=['arc','takahe','birdsong','geothermal','collabs'];
+  function open(id,scroll){
+    if(ids.indexOf(id)<0) return;
+    ids.forEach(function(k){
+      var p=document.getElementById('proj-'+k), t=document.getElementById('tab-'+k);
+      p.hidden=(k!==id); t.setAttribute('aria-selected',k===id); t.classList.toggle('on',k===id);
+    });
+    if(scroll) document.getElementById('stage').scrollIntoView({behavior:'smooth',block:'start'});
+    try{history.replaceState(null,'','#proj-'+id);}catch(e){}
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-open]'); if(!b) return;
+    e.preventDefault(); open(b.dataset.open, true);
+  });
+  document.querySelector('.tabs').addEventListener('keydown',function(e){
+    if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft') return;
+    var i=ids.indexOf(document.activeElement.dataset.open); if(i<0) return;
+    var n=ids[(i+(e.key==='ArrowRight'?1:ids.length-1))%ids.length];
+    open(n,false); document.getElementById('tab-'+n).focus();
+  });
+  var h=location.hash.replace('#proj-','');
+  if(ids.indexOf(h)>=0){ open(h,false); setTimeout(function(){document.getElementById('stage').scrollIntoView();},50); }
+  else document.getElementById('tab-arc').classList.add('on');
+})();
+</script>
 </body>
 </html>
