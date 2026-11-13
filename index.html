@@ -87,50 +87,122 @@
 <section class="research wrap" id="research">
   <h2 class="section-title"><span>01</span>Research</h2>
 
-  <article class="project feature">
+  <article class="project feature" id="feature" aria-live="polite"></article>
+
+  <div class="project-grid" id="project-grid"></div>
+
+  <!-- ===== Project content. Each project has a full (feature) view and a card view. ===== -->
+
+  <template id="haynes-full">
     <div class="project-media">
-      <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener">
-        <img src="assets/img/egu2024-poster.jpg" alt="EGU 2024 poster: The potential role of anomalous geothermal flux for enhanced basal melting and suppressed ice velocity at Haynes Glacier" loading="lazy">
-      </a>
-      <p class="caption">EGU 2024, Vienna: anomalous geothermal flux and a "sticky spot" at Haynes Glacier. <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
-      <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener" class="poster2">
-        <img src="assets/img/egu-poster.jpg" alt="EGU 2025 poster: Why assumptions and uncertainties in bed DEMs matter, Haynes Glacier" loading="lazy">
+      <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">
+        <img src="assets/img/egu-poster.jpg" alt="EGU 2025 poster: Why assumptions and uncertainties in bed DEMs matter, Haynes Glacier">
       </a>
       <p class="caption">EGU 2025, Vienna: why bed DEM assumptions matter. <a href="assets/docs/Bott_EGU2025_poster.pdf" target="_blank" rel="noopener">Full poster (PDF)</a></p>
+      <div class="poster-pair">
+        <div>
+          <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener"><img src="assets/img/egu2024-poster.jpg" alt="EGU 2024 poster: The potential role of anomalous geothermal flux at Haynes Glacier"></a>
+          <p class="caption">EGU 2024, Vienna: anomalous geothermal flux and a "sticky spot." <a href="assets/docs/Bott_EGU2024_poster.pdf" target="_blank" rel="noopener">PDF</a></p>
+        </div>
+        <div>
+          <a href="assets/docs/Bott_AGU2023_poster.pdf" target="_blank" rel="noopener"><img src="assets/img/agu2023-poster.jpg" alt="AGU 2023 poster: Potential sources for a velocity anomaly at the grounding line of Haynes Glacier"></a>
+          <p class="caption">AGU 2023: my first-ever poster, where it all started. <a href="assets/docs/Bott_AGU2023_poster.pdf" target="_blank" rel="noopener">PDF</a></p>
+        </div>
+      </div>
     </div>
     <div class="project-body">
       <p class="tag">UTIG · 2022 – present</p>
       <h3>Geothermal heat and bed uncertainty at Haynes Glacier</h3>
-      <p class="sub-tag">EGU 2024 · Anomalous geothermal flux</p>
-      <p>Near its grounding line, Haynes Glacier has a "sticky spot," a patch of ice moving far slower than the flow around it. Upstream, radar shows internal layers drawn sharply down toward the bed. I proposed that anomalous geothermal heat (or strong basal friction) melts basal ice upstream, pulling cold surface snow deep into the ice column, which then refreezes to the bed downstream as the ice thins, producing the slow patch. I tested the idea with coupled thermal and kinematic models, with implications for heat flux and ice-stream stability in West Antarctica.</p>
       <p class="sub-tag">EGU 2025 · Why bed DEMs matter</p>
       <p>Bed topography is the most important boundary condition for an ice model, yet the standard bed products each break down at Haynes: Bedmap struggles with its trough-dominated bed, and BedMachine's mass-conservation approach struggles with heterogeneous geothermal flux from nearby volcanoes like Mt. Takahe. Along a flowband traced from MEaSUREs surface velocity, I built bed DEMs from the raw radar using deterministic interpolation (tension splines, inverse-distance weighting, curvature minimization) and conditional stochastic simulation of bed roughness. I then fed each into a 2.5D shallow-ice model and compared its simulated layers with the dipping reflectors observed in the radar, showing how bed assumptions shape model output.</p>
+      <p class="sub-tag">EGU 2024 · Anomalous geothermal flux</p>
+      <p>Near its grounding line, Haynes Glacier has a "sticky spot," a patch of ice moving far slower than the flow around it. Upstream, radar shows internal layers drawn sharply down toward the bed. I proposed that anomalous geothermal heat (or strong basal friction) melts basal ice upstream, pulling cold surface snow deep into the ice column, which then refreezes to the bed downstream as the ice thins, producing the slow patch. I tested the idea with coupled thermal and kinematic models, with implications for heat flux and ice-stream stability in West Antarctica.</p>
+      <p class="sub-tag">AGU 2023 · A velocity anomaly at the grounding line</p>
+      <p>Where it started: fast ice stopping just short of the grounding line beside the Mt. Murphy volcano, with layers drawn down through nearly half the ice thickness. A simple temperature model found nothing unusual at the bed, which raised the possibility of an upstream transient from Mt. Takahe, whose last activity is roughly 2,000 years old.</p>
       <ul class="chips"><li>Ice-penetrating radar</li><li>Geostatistics</li><li>Shallow ice approximation</li><li>West Antarctica</li></ul>
-      <a class="more" href="https://doi.org/10.5194/egusphere-egu24-14072" target="_blank" rel="noopener">EGU24 abstract →</a>&nbsp;&nbsp;
-      <a class="more" href="https://doi.org/10.5194/egusphere-egu25-14386" target="_blank" rel="noopener">EGU25 abstract →</a>
+      <p class="collab"><b>Collaborators</b> Don Blankenship, Duncan Young, Shuai Yan, Lucas Beem (UTIG)</p>
+      <a class="more" href="https://doi.org/10.5194/egusphere-egu25-14386" target="_blank" rel="noopener">EGU25 abstract →</a>&nbsp;&nbsp;
+      <a class="more" href="https://doi.org/10.5194/egusphere-egu24-14072" target="_blank" rel="noopener">EGU24 abstract →</a>
     </div>
-  </article>
+  </template>
+  <template id="haynes-card">
+    <p class="tag">UTIG · 2022 – present</p>
+    <h3>Geothermal heat and bed uncertainty at Haynes Glacier</h3>
+    <p>A "sticky spot" of slow ice and layers drawn deep into the ice column, followed across three posters: AGU 2023, EGU 2024 and EGU 2025.</p>
+    <ul class="chips"><li>Ice-penetrating radar</li><li>Geostatistics</li><li>West Antarctica</li></ul>
+  </template>
 
-  <div class="project-grid">
-    <article class="project">
-      <p class="tag">Honors thesis</p>
+  <template id="takahe-full">
+    <div class="project-media">
+      <img src="assets/img/research/thwaites-radargram.jpg" alt="Radargram upstream in the Thwaites catchment with a disrupted column of internal layers boxed in red">
+      <p class="caption">Disrupted internal layers upstream in the Thwaites catchment (boxed), from a 2018 CReSIS radar line.</p>
+      <img class="poster2" src="assets/img/research/takahe-transient.jpg" alt="Ice velocity map with the radar flight line in red crossing the catchment upstream of Haynes Glacier">
+      <p class="caption">Where that radar line runs, upstream of the Haynes slow patch.</p>
+    </div>
+    <div class="project-body">
+      <p class="tag">Honors thesis · 2026</p>
       <h3>A case for late-Holocene subglacial volcanism at Mount Takahe</h3>
       <p>I'm building the case for recent subglacial volcanism at Mount Takahe in the Thwaites catchment, using ice-penetrating radar, and asking how it might affect shear-margin mechanics. The work combines IPR observations with thermally coupled ice-flow models (shallow ice approximation and 3D finite-difference Stokes flow).</p>
+      <p>I trace radar isochrones (internal layers of known age) through the catchment and look for the fingerprints of basal melt: layers drawn down toward the bed and disrupted columns. If heat from a volcano like Takahe is melting the bed and weakening the ice around it, it belongs in models of West Antarctic ice loss.</p>
       <ul class="chips"><li>Mt. Takahe</li><li>Thwaites Glacier</li><li>Stokes flow</li><li>Thermomechanics</li></ul>
-    </article>
-    <article class="project">
-      <p class="tag">Oden Institute · Advisor: Dr. Timothy Keitt</p>
+      <p class="collab"><b>Advisors</b> Don Blankenship, Duncan Young, Shuai Yan (UTIG)</p>
+    </div>
+  </template>
+  <template id="takahe-card">
+    <p class="tag">Honors thesis</p>
+    <h3>A case for late-Holocene subglacial volcanism at Mount Takahe</h3>
+    <p>I'm building the case for recent subglacial volcanism at Mount Takahe in the Thwaites catchment, using ice-penetrating radar, and asking how it might affect shear-margin mechanics. The work combines IPR observations with thermally coupled ice-flow models (shallow ice approximation and 3D finite-difference Stokes flow).</p>
+    <ul class="chips"><li>Mt. Takahe</li><li>Thwaites Glacier</li><li>Stokes flow</li><li>Thermomechanics</li></ul>
+  </template>
+
+  <template id="birdsong-full">
+    <div class="project-media">
+      <div class="fig-pending"><span>Preliminary results · December 2026</span><p>Song clusters and river-barrier figures coming soon.</p></div>
+    </div>
+    <div class="project-body">
+      <p class="tag">Oden Institute · 2026</p>
       <h3>Rivers, birdsong &amp; the Amazon</h3>
       <p>In this independent project, I'm using BirdNET, an open-source machine-learning tool, to map variation in antbird (Thamnophilidae) song across geographic space. I'm asking whether that variation tracks the geomorphological evolution of Amazonian rivers, and whether it can help with population assessment.</p>
+      <p>I cluster song features and compare them against geographic distance and river size and shape, testing whether a river "permeability" parameter from a leaky-barrier model of animal movement can explain the patterns. If song tracks population structure, passive acoustic monitoring becomes a cheap way to assess cryptic species across whole regions.</p>
       <ul class="chips"><li>Machine learning</li><li>Bioacoustics</li><li>Geomorphology</li></ul>
-    </article>
-    <article class="project">
-      <p class="tag">Collaborations</p>
+      <p class="collab"><b>Advisor</b> Dr. Timothy Keitt (UT Austin)</p>
+    </div>
+  </template>
+  <template id="birdsong-card">
+    <p class="tag">Oden Institute · Advisor: Dr. Timothy Keitt</p>
+    <h3>Rivers, birdsong &amp; the Amazon</h3>
+    <p>In this independent project, I'm using BirdNET, an open-source machine-learning tool, to map variation in antbird (Thamnophilidae) song across geographic space. I'm asking whether that variation tracks the geomorphological evolution of Amazonian rivers, and whether it can help with population assessment.</p>
+    <ul class="chips"><li>Machine learning</li><li>Bioacoustics</li><li>Geomorphology</li></ul>
+  </template>
+
+  <template id="collabs-full">
+    <div class="project-media">
+      <img src="assets/img/ipr-rack.jpg" alt="Ice-penetrating radar electronics rack installed in a helicopter cabin">
+      <p class="caption">The UTIG ice-penetrating radar, installed for the 2025–26 Thwaites season.</p>
+    </div>
+    <div class="project-body">
+      <p class="tag">Collaborations · UTIG</p>
       <h3>Radioglaciology beyond Antarctica</h3>
-      <p>I've contributed to team studies of airborne radar radiometry and specular subglacial terrain on the Devon Ice Cap, Canada; ice-fabric anisotropy at Thwaites; and a possible ephemeral salty lake beneath the former Laurentide Ice Sheet.</p>
+      <p class="sub-tag">Devon Ice Cap, Canada</p>
+      <p>Airborne radar radiometry and coastline mapping of specular subglacial terrain on Devon Island.</p>
+      <p class="collab">Gerekos, Rutishauser, Scanlan, Wolfenbarger, Beem, Bott, Blankenship · EGU 2023</p>
+      <p class="sub-tag">Thwaites Glacier, West Antarctica</p>
+      <p>Radar-derived ice-fabric anisotropy and anisotropic scattering.</p>
+      <p class="collab">Li, Blankenship, Young, Yan, … Bott, … Lee · IGS Radioglaciology 2026</p>
+      <p class="sub-tag">Laurentide Ice Sheet</p>
+      <p>On the possibility of a substantial but ephemeral salty lake beneath the former Laurentide Ice Sheet.</p>
+      <p class="collab">Yan, Pierce, Dapeng, Czwakiel, Jackson, Bott, Blankenship · AGU 2026</p>
       <ul class="chips"><li>Devon Island</li><li>Ice fabric</li><li>Paleo-ice sheets</li></ul>
-    </article>
-  </div>
+    </div>
+  </template>
+  <template id="collabs-card">
+    <p class="tag">Collaborations</p>
+    <h3>Radioglaciology beyond Antarctica</h3>
+    <p>I've contributed to team studies of airborne radar radiometry and specular subglacial terrain on the Devon Ice Cap, Canada; ice-fabric anisotropy at Thwaites; and a possible ephemeral salty lake beneath the former Laurentide Ice Sheet.</p>
+    <ul class="chips"><li>Devon Island</li><li>Ice fabric</li><li>Paleo-ice sheets</li></ul>
+  </template>
+
+  <noscript><p>Enable JavaScript to browse research projects.</p></noscript>
 </section>
 
 <!-- FIELDWORK -->
@@ -479,5 +551,34 @@
 </script>
 <script src="assets/vendor/leaflet/leaflet.js"></script>
 <script src="assets/map.js"></script>
+<script>
+(function(){
+  var order=['haynes','takahe','birdsong','collabs'];
+  var featured='haynes', cards=order.slice(1);
+  var feat=document.getElementById('feature'), grid=document.getElementById('project-grid');
+  function tpl(id){return document.getElementById(id).content.cloneNode(true);}
+  function renderFeature(){feat.innerHTML='';feat.appendChild(tpl(featured+'-full'));feat.dataset.id=featured;}
+  function makeCard(id){
+    var a=document.createElement('article');a.className='project swap';a.dataset.id=id;a.tabIndex=0;a.setAttribute('role','button');
+    a.appendChild(tpl(id+'-card'));
+    var b=document.createElement('button');b.type='button';b.className='more view';b.textContent='View project →';a.appendChild(b);
+    return a;
+  }
+  function renderCards(){grid.innerHTML='';cards.forEach(function(id){grid.appendChild(makeCard(id));});}
+  function swap(id){
+    var i=cards.indexOf(id); if(i<0) return;
+    cards[i]=featured; featured=id;
+    feat.classList.add('fading'); grid.classList.add('fading');
+    setTimeout(function(){
+      renderFeature(); renderCards();
+      feat.classList.remove('fading'); grid.classList.remove('fading');
+      var y=feat.getBoundingClientRect().top+window.scrollY-80; window.scrollTo({top:y,behavior:'smooth'});
+    },180);
+  }
+  grid.addEventListener('click',function(e){var c=e.target.closest('.swap'); if(c) swap(c.dataset.id);});
+  grid.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('swap')){e.preventDefault();swap(e.target.dataset.id);}});
+  renderFeature(); renderCards();
+})();
+</script>
 </body>
 </html>

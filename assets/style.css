@@ -275,3 +275,20 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .pop-thumbs img:hover{outline:2px solid var(--accent)}
 .flash{outline:3px solid var(--accent);outline-offset:4px;transition:outline-color 1s}
 @media (max-width:560px){#travel-map{height:320px}.pop-thumbs img{width:100px;height:70px}}
+
+/* research: revolving projects (slightly smaller feature) */
+.project.feature{grid-template-columns:1.1fr 1fr;gap:40px;margin-bottom:48px;transition:opacity .18s}
+.project.feature h3{font-size:28px}
+.project.feature .project-body{font-size:16px}
+.poster-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.project-grid{transition:opacity .18s}
+.fading{opacity:0}
+.project-grid .swap{cursor:pointer;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.project-grid .swap:hover,.project-grid .swap:focus-visible{transform:translateY(-4px);box-shadow:0 18px 36px -22px rgba(12,22,32,.55);outline:none}
+.project-grid .swap .view{margin-top:auto;padding:0;background:none;border:0;cursor:pointer;text-align:left;align-self:flex-start}
+.project-grid .swap:hover .view{text-decoration:underline}
+.collab{font:13px/1.5 var(--mono);color:var(--muted)}
+.collab b{font-weight:500;color:var(--accent-deep);text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;margin-right:6px}
+.fig-pending{border:1px dashed var(--line);background:repeating-linear-gradient(135deg,transparent 0 12px,rgba(27,38,48,.03) 12px 24px);padding:56px 28px;text-align:center}
+.fig-pending span{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
+.fig-pending p{color:var(--muted);margin-top:8px;font-size:15px}
