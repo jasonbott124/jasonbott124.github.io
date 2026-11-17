@@ -292,3 +292,5 @@ figcaption{font:12px var(--mono);color:var(--ice-muted);margin-top:10px}
 .fig-pending{border:1px dashed var(--line);background:repeating-linear-gradient(135deg,transparent 0 12px,rgba(27,38,48,.03) 12px 24px);padding:56px 28px;text-align:center}
 .fig-pending span{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep)}
 .fig-pending p{color:var(--muted);margin-top:8px;font-size:15px}
+@media (max-width:900px){.project.feature{grid-template-columns:1fr;gap:28px}.project-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.project.feature h3{font-size:24px}.poster-pair{gap:10px}}
