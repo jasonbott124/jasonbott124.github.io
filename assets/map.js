@@ -15,6 +15,7 @@
     "Angel Peak, New Mexico":[36.55,-107.86],"White Rock Canyon, New Mexico":[35.8,-106.2],"Mount Rainier, Washington":[46.79,-121.73],"Pacific Northwest":[47.6,-122.9],
     "Holguín, Cuba":[20.89,-76.26],"Monahans, TX":[31.65,-102.8],"McKittrick Canyon, Guadalupe Mountains, Texas":[31.98,-104.75],"Guadalupe Mountains":[31.9,-104.9],
     "San Salvador, Bahamas":[24.05,-74.5],
+    "Ouachita National Forest":[34.6,-94.2],"Beavers Bend State Park, Oklahoma":[34.14,-94.69],
     "Monjeau Peak Lookout, New Mexico":[33.43,-105.73],"Sunset Reef, New Mexico":[32.24,-104.47]
   };
   var FIELD=[
